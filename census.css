@@ -1,0 +1,207 @@
+body
+{
+    margin: 4%;
+    background-color: #F0F2EF;
+    font-family: 'Source Code Pro', monospace;
+}
+/* nav bar */
+nav
+{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4%;
+}
+
+#census-logo
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#census-logo a
+{
+    font-size: 50px;
+    text-decoration: none;
+    color:  #519872;
+}
+
+#census-navigator
+{
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+}
+
+#census-navigator a
+{
+    font-size: 25px;
+    margin-right: 15px;
+    text-decoration: none;
+    color:  #519872;
+}
+/* population count down */
+.population-count-down
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5%;
+    margin-bottom: 3%;
+}
+
+.population-count-down-boxes
+{
+    width: 87%;
+    height: 78px;
+    padding: 6%;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+
+.text p{
+    margin: 0px;
+}
+
+.population-count-down-boxes .pop-txt
+{
+    font-size: 20px;
+    color: #828282;
+}
+
+.population-count-down-boxes .pop-figure
+{
+    font-size: 35px;
+}
+
+.icon_box
+{
+    color: #ffffff;
+    width: 70%;
+    height: 70px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #519872;
+}
+.icon_box i {
+    font-size: 70px;
+}
+/* population count down graphics */
+.population-graphics
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2%;
+    margin-bottom: 3%;
+}
+
+.county-bar-chat
+{
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.gender-pie-chat
+{
+    width: 100%;
+    height: 450px;
+    background-color: #519872;
+    border-radius: 5px 5px 5px 5px;
+}
+/* graphics of district population per county */
+.district-bar-chat
+{
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 3%;
+}
+/* data download */
+.download-area
+{
+    width: 96%;
+    height: 100px;
+    padding: 2%;
+    background-color: #519872;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 7fr 3.3fr;
+}
+
+.download-txt1 
+{
+    color: #ffffff;
+    margin: 0px;
+}
+
+.download-txt1 p{
+    font-size: 30px;
+}
+
+.download-btn
+{
+    width: 87%;
+    height: 48px;
+    padding: 6%;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+
+.download-icon
+{
+    width: 40%;
+    height: 46px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #519872;
+}
+
+.download-icon i {
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+.download-txt2
+{
+    color: #519872;
+    margin-left: -24%;
+    margin-top: -44px;
+}
+
+.download-txt2 p
+{
+    font-size: 40px;
+}
+
+/* graphics of househpld population per county */
+.household-and-county-rank
+{
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    grid-gap: 2%;
+}
+
+.household-bar-chat
+{
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.rank-county-of-most-gender
+{
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+}

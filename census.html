@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>census</title>
+    <link rel="stylesheet" href="census.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav>
+        <div id="census-logo">
+            <a href="#"><b>census2008</b></a>
+        </div>
+        <div id="census-navigator">
+            <a href="#">HOME</a>
+            <a href="#">DOWNLOAD</a>
+        </div>
+    </nav>
+    <main>
+        <div class="population-count-down">
+            <div id="total-population" class="population-count-down-boxes">
+                <div class="icon_box"></div>
+                <div class="text">
+                    <p class="pop-txt">Total Population</p>
+                    <p class="pop-figure" id="total-population"><b>1,200,000</b></p>
+                </div>
+            </div>
+            <div id="total-female" class="population-count-down-boxes">
+                <div class="icon_box">
+                    <i class="material-icons">female</i>
+                </div>
+                <div class="text">
+                    <p class="pop-txt">FEMALE</p>
+                    <p class="pop-figure" id="total-female"><b>345,789</b></p>
+                </div>
+            </div>
+            <div id="total-male" class="population-count-down-boxes">
+                <div class="icon_box">
+                    <i class="material-icons">male</i>
+                </div>
+                <div class="text">
+                    <p class="pop-txt">MALE</p>
+                    <p class="pop-figure" id="total-male"><b>200,200</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="population-graphics">
+            <div class="county-bar-chat">
+                county bar chat
+            </div>
+            <div class="gender-pie-chat">
+                pie chat for male and female
+            </div>
+        </div>
+        <div class="district-bar-chat">
+            district bar chat
+        </div>
+        <div class="download-area">
+            <div class="download-txt1">
+                <p>Download 2008 Census data</p>
+            </div>
+            <div class="download-btn">
+                <div class="download-icon">
+                    <i class="material-icons">download</i>
+                </div>
+                <div class="download-txt2">
+                    <p>DOWNLOAD</p>
+                </div>
+            </div>
+        </div>
+        <div class="household-and-county-rank">
+            <div class="household-bar-chat">
+                households bar chat
+            </div>
+            <div class="rank-county-of-most-gender">
+                rank counties according to number of male and female
+            </div>
+        </div>
+    </main>
+    <script src="census.js"></script>
+</body>
+</html>
