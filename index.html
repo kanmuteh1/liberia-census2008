@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"></script>
 </head>
 <body>
     <nav>
@@ -15,8 +16,8 @@
             <a href="#"><b>census2008</b></a>
         </div>
         <div id="census-navigator">
-            <a href="#">HOME</a>
-            <a href="#">DOWNLOAD</a>
+            <a href="index.html">HOME</a>
+            <a href="#download">DOWNLOAD</a>
         </div>
     </nav>
     <main>
@@ -51,20 +52,30 @@
         </div>
         <div class="population-graphics">
             <div class="county-bar-chat">
-                county bar chat
+                <canvas id="counties-bar-chat"></canvas>
             </div>
             <div class="gender-pie-chat">
-                pie chat for male and female
+                <canvas id="male-and-female-doughnut-chat"></canvas>
             </div>
         </div>
         <div class="district-bar-chat">
-            district bar chat
+            <div class="counties-and-district">
+                <div class="district-txt">
+                    <p>Distribution of Population by District</p>
+                </div>
+                <div class="select-county">
+                    <select name="" id="">
+                        <option value="">Montserrado</option>
+                    </select>
+                </div>
+            </div>
+            <canvas id="population-per-district-chat"></canvas>
         </div>
         <div class="download-area">
             <div class="download-txt1">
                 <p>Download 2008 Census data</p>
             </div>
-            <div class="download-btn">
+            <div class="download-btn" id="download">
                 <div class="download-icon">
                     <i class="material-icons">download</i>
                 </div>
@@ -75,7 +86,7 @@
         </div>
         <div class="household-and-county-rank">
             <div class="household-bar-chat">
-                households bar chat
+                <canvas id="population-per-household-chat"></canvas>
             </div>
             <div class="rank-county-of-most-gender">
                 rank counties according to number of male and female
