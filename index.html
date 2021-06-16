@@ -52,10 +52,10 @@
         </div>
         <div class="population-graphics">
             <div class="county-bar-chat">
-                <canvas id="counties-bar-chat"></canvas>
+                <canvas id="counties-bar-chart"></canvas>
             </div>
             <div class="gender-pie-chat">
-                <canvas id="male-and-female-doughnut-chat"></canvas>
+                <canvas id="male-and-female-doughnut-chart"></canvas>
             </div>
         </div>
         <div class="district-bar-chat">
@@ -64,8 +64,7 @@
                     <p>Distribution of Population by District</p>
                 </div>
                 <div class="select-county">
-                    <select name="" id="">
-                        <option value="">Montserrado</option>
+                    <select name="counties" id="counties-selection-area" onchange="setUpDistrictChart()" class="district-select">
                     </select>
                 </div>
             </div>
@@ -86,10 +85,24 @@
         </div>
         <div class="household-and-county-rank">
             <div class="household-bar-chat">
+                <div class="counties-and-household">
+                    <div class="household-txt">
+                        <p>Distribution of Population by Number of Households</p>
+                    </div>
+                    <div class="select-county">
+                        <select name="counties" id="counties-household-selection-area" onchange="setUpHouseholdChart()">
+                        </select>
+                    </div>
+                </div>
                 <canvas id="population-per-household-chat"></canvas>
             </div>
             <div class="rank-county-of-most-gender">
-                rank counties according to number of male and female
+                <p class="most-male-and-female">Counties with most males & females</p>
+                <div class="rank-data-area">
+                    <table>
+                        
+                    </table>
+                </div>
             </div>
         </div>
     </main>

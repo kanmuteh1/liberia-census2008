@@ -121,7 +121,7 @@ nav
 {
     width: 90%;
     height: 550px;
-    padding: 5%;
+    padding: 4% 5% 8% 5%;
     background-color: #ffffff;
     border-radius: 5px 5px 5px 5px;
     margin-bottom: 3%;
@@ -130,12 +130,20 @@ nav
 .counties-and-district
 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 1fr;
 }
 
 .district-txt
 {
+    font-size: 25px;
+}
+
+select
+{
+    padding: 2.5% 2% 2.5% 2%;
     font-size: 20px;
+    background-color: #F0F2EF;
+    border: 4px solid #B1D2C2;
 }
 
 /* data download */
@@ -174,6 +182,7 @@ nav
 
 .download-icon
 {
+    margin-top: 2%;
     width: 40%;
     height: 40px;
     text-align: center;
@@ -191,7 +200,7 @@ nav
 .download-txt2
 {
     color: #519872;
-    margin-left: -24%;
+    margin-left: -28%;
     margin-top: -44px;
 }
 
@@ -212,15 +221,32 @@ nav
 {
     width: 84%;
     height: 320px;
+    padding: 4% 8% 12.5% 8%;
+    background-color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.counties-and-household
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.household-txt
+{
+    font-size: 20px;
+}
+
+.rank-county-of-most-gender
+{
+    width: 86%;
+    height: 384px;
     padding: 8%;
     background-color: #ffffff;
     border-radius: 5px 5px 5px 5px;
 }
 
-.rank-county-of-most-gender
+.most-male-and-female
 {
-    width: 100%;
-    height: 450px;
-    background-color: #ffffff;
-    border-radius: 5px 5px 5px 5px;
+    font-size: 1.3em;
 }
